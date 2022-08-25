@@ -1,12 +1,20 @@
 ---
-title: "r4ds2"
+title: "r4ds2 lesson 1"
 author: "Phanikumar S Tata"
 format: revealjs
+incremental: true
+title-slide-attributes: 
+  data-background-size: cover
 editor: visual
 footer: BCD1RLG (Bayer CD1 R Learning Group)
 ---
 
+# R for data science  book
+
+![](img/cover.png)
+
 # Introduction
+
 
 The Introduction gives an overview of what the book covers. **Learning objectives:**
 

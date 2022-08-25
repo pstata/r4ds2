@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-0.9.587">
 
   <meta name="author" content="Phanikumar S Tata">
-  <title>r4ds2</title>
+  <title>r4ds2 lesson 1</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -382,39 +382,44 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
-  <h1 class="title">r4ds2</h1>
+<section id="title-slide" data-background-size="cover" class="center">
+  <h1 class="title">r4ds2 lesson 1</h1>
   <p class="author">Phanikumar S Tata</p>
 </section>
+
+<section id="r-for-data-science-book" class="title-slide slide level1 center">
+<h1>R for data science book</h1>
+
+<img data-src="img/cover.png" class="r-stretch"></section>
 
 <section>
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
 <p>The Introduction gives an overview of what the book covers. <strong>Learning objectives:</strong></p>
 <ul>
-<li>Describe a <strong>typical data science project.</strong></li>
-<li>Explain the reasoning behind the <strong>order of content in this book.</strong></li>
-<li>Recognize topics that are explicitly <strong>not covered by this book.</strong></li>
-<li><strong>Set up an environment</strong> in which you can learn the topics in this book.</li>
+<li class="fragment">Describe a <strong>typical data science project.</strong></li>
+<li class="fragment">Explain the reasoning behind the <strong>order of content in this book.</strong></li>
+<li class="fragment">Recognize topics that are explicitly <strong>not covered by this book.</strong></li>
+<li class="fragment"><strong>Set up an environment</strong> in which you can learn the topics in this book.</li>
 </ul>
 </section>
 <section id="introduction-1" class="slide level2">
 <h2>Introduction</h2>
 <ul>
-<li>Describe how <strong>code in the book</strong> differs from <strong>code in your console.</strong></li>
-<li>Recall ways to <strong>get help with R code.</strong>
+<li class="fragment">Describe how <strong>code in the book</strong> differs from <strong>code in your console.</strong></li>
+<li class="fragment">Recall ways to <strong>get help with R code.</strong>
 <ul>
-<li>Produce a minimal reproducible example or <strong>reprex.</strong></li>
+<li class="fragment">Produce a minimal reproducible example or <strong>reprex.</strong></li>
 </ul></li>
 </ul>
 </section></section>
 <section id="the-order-of-content-in-this-book" class="title-slide slide level1 center">
 <h1>The order of content in this book</h1>
 <ul>
-<li>Import &amp; Tidy are boring, so we jump to <strong>visualization &amp; transformation.</strong></li>
-<li>After that we learn to <strong>wrangle (import &amp; tidy) data,</strong> because that is a necessary skill.</li>
-<li>Those baseline skills enables us to start <strong>programming.</strong> Learning to program helps us simplify the other steps.</li>
-<li>We might then get into <strong>modeling</strong> and <strong>communicating,</strong> or we might pick those up in other books</li>
+<li class="fragment">Import &amp; Tidy are boring, so we jump to <strong>visualization &amp; transformation.</strong></li>
+<li class="fragment">After that we learn to <strong>wrangle (import &amp; tidy) data,</strong> because that is a necessary skill.</li>
+<li class="fragment">Those baseline skills enables us to start <strong>programming.</strong> Learning to program helps us simplify the other steps.</li>
+<li class="fragment">We might then get into <strong>modeling</strong> and <strong>communicating,</strong> or we might pick those up in other books</li>
 </ul>
 </section>
 
@@ -422,29 +427,29 @@
 <section id="the-order-of-bcd1rlg-would-read-for-this" class="title-slide slide level1 center">
 <h1>The order of BCD1RLG would read for this</h1>
 <ul>
-<li>we will jump to <strong>Import &amp; Tidy.</strong></li>
-<li>After that we learn to <strong>wrangle (import &amp; tidy) data,</strong> because that is a necessary skill.</li>
-<li>Then to <strong>visualization &amp; transformation.</strong></li>
-<li>Those baseline skills enables us to start <strong>programming.</strong> Learning to program helps us simplify the other steps.</li>
+<li class="fragment">we will jump to <strong>Import &amp; Tidy.</strong></li>
+<li class="fragment">After that we learn to <strong>wrangle (import &amp; tidy) data,</strong> because that is a necessary skill.</li>
+<li class="fragment">Then to <strong>visualization &amp; transformation.</strong></li>
+<li class="fragment">Those baseline skills enables us to start <strong>programming.</strong> Learning to program helps us simplify the other steps.</li>
 </ul>
 </section>
 <section id="not-covered-by-this-book" class="slide level2">
 <h2>Not covered by this book</h2>
 <ul>
-<li><strong>Big data:</strong> Working with big data is problem-specific. If you need to work with big data, other tools will be useful to learn.</li>
-<li><strong>Python, Julia, etc:</strong> This book focuses on R. Master one tool at a time, but maybe go on to other tools later.</li>
-<li><strong>Non-rectangular data:</strong> Honestly even a lot of things that aren’t naturally table-like can be coerced to be table-like, so it makes sense to start with tables.</li>
-<li><strong>Hypothesis confirmation:</strong> This book focuses on exploratory data analysis.</li>
+<li class="fragment"><strong>Big data:</strong> Working with big data is problem-specific. If you need to work with big data, other tools will be useful to learn.</li>
+<li class="fragment"><strong>Python, Julia, etc:</strong> This book focuses on R. Master one tool at a time, but maybe go on to other tools later.</li>
+<li class="fragment"><strong>Non-rectangular data:</strong> Honestly even a lot of things that aren’t naturally table-like can be coerced to be table-like, so it makes sense to start with tables.</li>
+<li class="fragment"><strong>Hypothesis confirmation:</strong> This book focuses on exploratory data analysis.</li>
 </ul>
 </section>
 <section id="setting-up-an-environment" class="slide level2">
 <h2>Setting up an environment</h2>
 <p>We’ll need:</p>
 <ul>
-<li><strong>R</strong></li>
-<li><strong>Rstudio</strong></li>
-<li>The <strong>tidyverse</strong> (<code>install.packages("tidyverse")</code>)</li>
-<li>Three <strong>additional packages</strong> (<code>install.packages(c("nycflights13", "gapminder", "Lahman"))</code>)</li>
+<li class="fragment"><strong>R</strong></li>
+<li class="fragment"><strong>Rstudio</strong></li>
+<li class="fragment">The <strong>tidyverse</strong> (<code>install.packages("tidyverse")</code>)</li>
+<li class="fragment">Three <strong>additional packages</strong> (<code>install.packages(c("nycflights13", "gapminder", "Lahman"))</code>)</li>
 </ul>
 </section>
 <section id="running-r-code" class="slide level2">
@@ -472,20 +477,20 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><strong>Pay attention to error messages.</strong>
+<li class="fragment"><strong>Pay attention to error messages.</strong>
 <ul>
-<li>tidyverse error messages tend to actually be helpful.</li>
-<li>If you can’t figure out what an error is telling you, copy/paste it into Google.</li>
+<li class="fragment">tidyverse error messages tend to actually be helpful.</li>
+<li class="fragment">If you can’t figure out what an error is telling you, copy/paste it into Google.</li>
 </ul></li>
-<li><strong>Stackoverflow.com</strong> <em>can</em> be helpful, but beware.</li>
-<li><strong>r4ds.io/join</strong> is a friendly Slack community with volunteer R tutors.</li>
-<li>When you ask for help, make a <strong>reprex</strong> if possible.
+<li class="fragment"><strong>Stackoverflow.com</strong> <em>can</em> be helpful, but beware.</li>
+<li class="fragment"><strong>r4ds.io/join</strong> is a friendly Slack community with volunteer R tutors.</li>
+<li class="fragment">When you ask for help, make a <strong>reprex</strong> if possible.
 <ul>
-<li>State up front what <strong>packages</strong> you use (we’ll learn about loading packages very soon).</li>
-<li>Provide (a subset of) any data you use with <code>dput()</code>.</li>
-<li>Make sure your code is <strong>easy to read.</strong> Use clean spacing, clear variable names, and comments.</li>
+<li class="fragment">State up front what <strong>packages</strong> you use (we’ll learn about loading packages very soon).</li>
+<li class="fragment">Provide (a subset of) any data you use with <code>dput()</code>.</li>
+<li class="fragment">Make sure your code is <strong>easy to read.</strong> Use clean spacing, clear variable names, and comments.</li>
 </ul></li>
-<li><a href="https://twitter.com/search?q=%23rstats">#rstats</a> twitter is super active and surprisingly friendly.</li>
+<li class="fragment"><a href="https://twitter.com/search?q=%23rstats">#rstats</a> twitter is super active and surprisingly friendly.</li>
 </ul>
 </div>
 </div>
@@ -502,10 +507,10 @@
 <h1>Workflow: basics</h1>
 <p><strong>Learning objectives:</strong></p>
 <ul>
-<li>Understand the <strong>RStudio</strong> interface</li>
-<li>Use the R <strong>command line</strong> boldly</li>
-<li>Follow good <strong>style conventions</strong> when writing code</li>
-<li>Confidently call <strong>functions</strong> in R</li>
+<li class="fragment">Understand the <strong>RStudio</strong> interface</li>
+<li class="fragment">Use the R <strong>command line</strong> boldly</li>
+<li class="fragment">Follow good <strong>style conventions</strong> when writing code</li>
+<li class="fragment">Confidently call <strong>functions</strong> in R</li>
 </ul>
 </section>
 <section id="the-console-pane" class="slide level2">
@@ -694,11 +699,11 @@ Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2</code></pre>
 <div class="callout-content">
 <p><font size="4"> <em>There are only two hard things in computer science: cache invalidation and naming things. And off-by-one errors.</em> </font></p>
 <ul>
-<li>Picking good names for things is both harder and more important than you might guess.</li>
-<li>Having good guidelines for naming things can save you a lot of mental effort down the road.</li>
-<li>Names in R can only contain letters, numbers, <code>_</code>, and <code>.</code>.</li>
-<li>R is case-sensitive! And it can’t read your mind.</li>
-<li>Sticking with a good style convention will make your code more readable, both for others, and for yourself in the future.</li>
+<li class="fragment">Picking good names for things is both harder and more important than you might guess.</li>
+<li class="fragment">Having good guidelines for naming things can save you a lot of mental effort down the road.</li>
+<li class="fragment">Names in R can only contain letters, numbers, <code>_</code>, and <code>.</code>.</li>
+<li class="fragment">R is case-sensitive! And it can’t read your mind.</li>
+<li class="fragment">Sticking with a good style convention will make your code more readable, both for others, and for yourself in the future.</li>
 </ul>
 </div>
 </div>
@@ -719,12 +724,12 @@ Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2</code></pre>
 <div class="callout-content">
 <p>Some suggestions:</p>
 <ul>
-<li>Use descriptive names. Long names are ok!</li>
-<li>Use all lowercase by default, with <code>_</code> as a separator.
+<li class="fragment">Use descriptive names. Long names are ok!</li>
+<li class="fragment">Use all lowercase by default, with <code>_</code> as a separator.
 <ul>
-<li><code>student_item_data</code></li>
-<li><code>num_students</code></li>
-<li><code>fall2020_math_courses_with_multiple_sections</code></li>
+<li class="fragment"><code>student_item_data</code></li>
+<li class="fragment"><code>num_students</code></li>
+<li class="fragment"><code>fall2020_math_courses_with_multiple_sections</code></li>
 </ul></li>
 </ul>
 </div>
@@ -790,11 +795,11 @@ Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2</code></pre>
 <div class="callout-content">
 <p>Explore on your own:</p>
 <ul>
-<li>tab autocomplete</li>
-<li>up-arrow to see console history</li>
-<li>type, then command- (control-) up-arrow to search history</li>
-<li>alt-shift-k to see lots of shortcuts</li>
-<li>one of my recent favorites: alt-command-down-arrow (inside a script)</li>
+<li class="fragment">tab autocomplete</li>
+<li class="fragment">up-arrow to see console history</li>
+<li class="fragment">type, then command- (control-) up-arrow to search history</li>
+<li class="fragment">alt-shift-k to see lots of shortcuts</li>
+<li class="fragment">one of my recent favorites: alt-command-down-arrow (inside a script)</li>
 </ul>
 </div>
 </div>
